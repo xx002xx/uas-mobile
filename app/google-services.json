@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "126144703642",
+    "project_id": "uts-mobie",
+    "storage_bucket": "uts-mobie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126144703642:android:c33e1499caf8a4ff344323",
+        "android_client_info": {
+          "package_name": "com.example.uts_mobile_programming"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ3npc9YjKeue8TBt56zLuxCP8muNmX8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

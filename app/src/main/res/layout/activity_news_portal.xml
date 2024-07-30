@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsPortalActivity">
+
+    <EditText
+        android:id="@+id/news_title_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Judul berita"
+        android:inputType="text"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="1" />
+
+    <EditText
+        android:id="@+id/news_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tulis berita di sini..."
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/news_title_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintWidth_percent="1" />
+
+    <Button
+        android:id="@+id/upload_file_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Upload Foto"
+        app:layout_constraintTop_toBottomOf="@id/news_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="1"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/post_news_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Posting Berita"
+        app:layout_constraintTop_toBottomOf="@id/upload_file_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="1"
+        android:padding="16dp" />
+
+    <ListView
+        android:id="@+id/news_list_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/post_news_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
